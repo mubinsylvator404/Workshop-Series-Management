@@ -261,19 +261,7 @@ https://mds-workshop.vercel.app
 
 Founded in **2018**, Moulvibazar Debating Society is committed to promoting critical thinking, public speaking, and competitive debating through workshops, training programs, and national-level debate competitions.
 
----
 
-## Developed By
-
-**Abdullah Al Mubin**
-
-President, Moulvibazar Debating Society
-
-Software Engineering Student
-
-GitHub: https://github.com/mubinsylvator404
-
----
 
 ## License
 
