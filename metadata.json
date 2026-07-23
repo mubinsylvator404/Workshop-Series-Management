@@ -1,0 +1,6 @@
+{
+  "name": "The Wizard's Chamber of Debate",
+  "description": "An immersive wizard academy themed debate workshop platform for Moulvibazar Debating Society (MDS), featuring interactive scrolls, student dashboards, gamified XP ranks, and custom server-side AI debate assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Marcellus&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Cinzel", serif;
+  --font-marcellus: "Marcellus", serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-midnight: #0D0C16;
+  --color-magic-purple: #1A1830;
+  --color-royal-gold: #D4AF37;
+  --color-warm-candle: #FFD87A;
+  --color-magic-cyan: #59E1FF;
+  --color-ancient-silver: #CFCFCF;
+
+  --color-gold-50: #fcf9ec;
+  --color-gold-100: #f8f4cc;
+  --color-gold-200: #f3e8a3;
+  --color-gold-300: #eed56a;
+  --color-gold-400: #f7e4a1;
+  --color-gold-500: #d4af37;
+  --color-gold-600: #b9931e;
+  --color-gold-700: #937111;
+  --color-gold-800: #6e500b;
+  --color-gold-900: #493306;
+  --color-gold-950: #1b1302;
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020204;
+}
+::-webkit-scrollbar-thumb {
+  background: #4a371c;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c58d11;
+}
+
+/* Pulsing spell circle background animation */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 40s linear infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Parchment Roll-out animation */
+@keyframes roll-down {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 1000px;
+    opacity: 1;
+  }
+}
+
+.animate-roll-down {
+  animation: roll-down 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Global resets for luxurious ambient dark feel */
+body {
+  background-color: #05060f;
+  color: #e0d8d0;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom Magic Wand trailing cursor elements */
+.magic-trail {
+  pointer-events: none;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(226,175,26,1) 0%, rgba(253,250,225,0) 70%);
+  transform: translate(-50%, -50%);
+  animation: fade-out 0.8s forwards;
+  z-index: 9999;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+}
